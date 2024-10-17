@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'MaPolice';
+    src: url('fonts/MaPolice.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'MaPolice', sans-serif; /* Utilisez la police téléchargée */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Empêche le défilement */
+}
+
+.navbar {
+    background-color: transparent; /* Navbar invisible */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+#mainTitle {
+    font-size: 5rem; /* Taille du texte "Escapism" */
+    opacity: 0; /* Commence invisible */
+}
+
+p {
+    opacity: 0;
+    max-width: 600px;
+    text-align: center;
+}
+
+
