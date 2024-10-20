@@ -1,21 +1,23 @@
 @font-face {
-    font-family: 'MaPolice';
-    src: url('fonts/MaPolice.ttf') format('truetype');
+    font-family: 'po';
+    src: url('/sources/font/GeneralSans-Variable.ttf') format('truetype'); /* Add format */
     font-weight: normal;
     font-style: normal;
 }
 
-body {
+html {
+
+    font-family: 'po' !important; /* Utilisez la police téléchargée */
     background-color: #fff;
     color: #000;
-    font-family: 'MaPolice', sans-serif; /* Utilisez la police téléchargée */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden; /* Empêche le défilement */
+
+
+
+}
+
+
+body {
+
 }
 
 .navbar {
@@ -36,10 +38,11 @@ body {
     opacity: 0; /* Commence invisible */
 }
 
-p {
-    opacity: 0;
-    max-width: 600px;
-    text-align: center;
+.first {
+    padding-top: 80px; /* Adjust this value according to the height of your header */
 }
+
+
+
 
 
