@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'po';
-    src: url('/sources/font/GeneralSans-Variable.ttf') format('truetype'); /* Add format */
+    src: url('/sources/font/Satoshi-Variable.ttf') format('truetype'),
+         url('/sources/font/Satoshi-Variable.woff') format('woff'); /* Add WOFF format if available */
     font-weight: normal;
     font-style: normal;
 }
@@ -15,8 +16,20 @@ html {
 
 }
 
+#toggleTheme {
+    z-index: 1000; /* Assurez-vous que le bouton est au-dessus des autres éléments */
+}
+
+.dark-mode {
+    background-color: #000 !important; /* Fond noir */
+    color: #fff !important; /* Texte blanc */
+}
+
+
+
 
 body {
+    font-family: 'po' !important; /* Utilisez la police téléchargée */
 
 }
 
@@ -43,6 +56,26 @@ body {
 }
 
 
+
+.video-frame {
+    width: 50%;
+    height: 400px;
+
+    border: none; /* Suppression de la bordure par défaut */
+}
+
+.text-section p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+.bas {
+
+}
 
 
 
