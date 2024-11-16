@@ -10,13 +10,20 @@
 </head>
 <body class="bg-white text-black flex flex-col min-h-screen">
 
+    <!-- Header with Video Background -->
     <header class="navbar navbar-expand-lg bg-transparent fixed top-0 w-full z-10">
-        <div class="container-fluid">
+        <div class="container-fluid position-relative">
+            <!-- Video Background -->
+            <video class="video-bg" autoplay muted loop>
+                <source src="./path/to/your/video.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+
             <div class="navbar-brand">
-                <a href="index.html"><img src="./sources/images/logo.png" alt="Logo" width="160"></a> 
+                <a href="index.html"></a> 
             </div>
             <div class="ml-auto">
-                <a class="nav-link" href="chemin/vers/votre-manifeste.pdf" download>Manifeste PDF</a>
+                <a class="nav-link" href="chemin/vers/votre-manifeste.pdf" download>Manifesto PDF</a>
             </div>
         </div>
     </header>
@@ -37,10 +44,8 @@
         <p>&copy; 2024 Tristan Khadka. Tous droits réservés.</p>
     </footer>
 
-    <button id="toggleTheme" class="btn btn-dark position-fixed" style="bottom: 20px; left: 20px;" onclick="window.location.href='secret.html'">
-        Aller au Mode Sombre
-    </button>
-
+  
+    <img src="./sources/images/logo.png" alt="Logo" width="160" id="toggleTheme" class=" position-fixed" style="bottom: 20px; left: 20px;" onclick="window.location.href='secret.html'">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
