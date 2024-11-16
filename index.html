@@ -14,11 +14,6 @@
     <header class="navbar navbar-expand-lg bg-transparent fixed top-0 w-full z-10">
         <div class="container-fluid position-relative">
             <!-- Video Background -->
-            <video class="video-bg" autoplay muted loop>
-                <source src="./path/to/your/video.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la vidéo.
-            </video>
-
             <div class="navbar-brand">
                 <a href="index.html"></a> 
             </div>
@@ -26,32 +21,39 @@
                 <a class="nav-link" href="chemin/vers/votre-manifeste.pdf" download>Manifesto PDF</a>
             </div>
         </div>
+
+        <!-- ESCAPISM Text Centered -->
+        <p class="title" id="escapismTitle">ESCAPISM.</p>
+        <video class="video-bg" autoplay muted loop>
+            <source src="./sources/video/bg.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+
     </header>
-
-    <section class="first flex-grow pt-16">
-        <div class="content flex flex-col items-center justify-center text-center h-screen">
-            <h1 id="mainTitle" class="text-5xl font-bold">Escapism</h1>
-            <p class="mt-4 max-w-md">Un mouvement artistique minimaliste axé sur la réduction des distractions numériques. Découvrez notre manifeste.</p>
-        </div>
-    </section>
-
-    <section class="text-section py-5 text-center">
-        <h2 class="mb-4">Réflexions sur le Minimalisme</h2>
-        <p>mettre logo bonnome avec phone en petit dans le footer quand on clik il y a une animation le bonhme senfuit jusqua temps quon le voit plus et on se retrouver dans la page dark avec un easter egg</p>
-    </section>
 
     <footer class="text-center p-4">
         <p>&copy; 2024 Tristan Khadka. Tous droits réservés.</p>
     </footer>
 
+     <!--<img src="./sources/images/logo.png" alt="Logo" width="100" id="toggleTheme" class="position-fixed" style="bottom: 20px; left: 20px;" onclick="window.location.href='secret.html'"> -->
   
-    <img src="./sources/images/logo.png" alt="Logo" width="160" id="toggleTheme" class=" position-fixed" style="bottom: 20px; left: 20px;" onclick="window.location.href='secret.html'">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        // GSAP animation for the "ESCAPISM" title
+        gsap.to("#escapismTitle", {
+            opacity: 0, 
+            duration: 2, 
+            repeat: -1, 
+            yoyo: true, 
+            ease: "power2.inOut"
+        });
+    </script>
 </body>
 </html>
+
 
 
 
