@@ -10,10 +10,19 @@
 html {
     font-family: 'po', sans-serif !important;
     background-color: #fff;
-    color: #000;
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
+
+.bg {
+    font-family: 'po', sans-serif !important;
+    background-color: black;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
 
 body {
     font-family: 'po', sans-serif !important;
@@ -52,6 +61,18 @@ body {
     object-fit: cover; /* Cover the area properly */
     z-index: -1; /* Ensure video stays behind content */
 }
+
+.video-bg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Ensure it takes full height */
+    object-fit: cover; /* Cover the area properly */
+    z-index: -1; /* Ensure video stays behind content */
+    transform: translateX(-0.59%) 
+}
+
 
 /* Header title (ESCAPISM) styling */
 #escapismTitle {
@@ -109,3 +130,36 @@ footer p {
     cursor: pointer;
 }
 
+.nav-link {
+    color: rgb(255, 255, 255); /* Ensure text is initially black */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* White shadow for contrast */
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 0px; /* Distance from the bottom of the header */
+    left: 50%;
+    transform: translateX(-50%) translateY(1800%); /* Centers the text horizontally */
+    color: white; /* Text color */
+    font-size: 0.9rem; /* Adjust font size */
+    font-weight: 600; /* Optional: Make text bolder */
+}
+
+@media (max-width: 768px) {
+    .bottom-text {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+        transform: translateX(-90%) translateY(1250%); /* Adjust Y position for mobile */
+        bottom: 10px; /* Set bottom margin to 10px for mobile devices */
+    }
+}
+
+.escape-link {
+    color: #ffffff; /* Change to your preferred color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make it bold */
+}
+
+.escape-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #0056b3; /* Change color on hover */
+}
