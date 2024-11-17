@@ -165,3 +165,72 @@ footer p {
     text-decoration: underline; /* Add underline on hover */
     color: #0056b3; /* Change color on hover */
 }
+
+.song-section {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 500px; /* Adjust this margin based on your header height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 8px;
+    color: white;
+}
+
+.song-image {
+    max-width: 200px; /* Set a max-width for the cover image */
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+}
+
+.song-description {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.song-description h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.song-description p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.song-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.song-list li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .song-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .song-description {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .song-image {
+        margin-bottom: 20px;
+    }
+}
+
+.random-text {
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0; /* Start with invisible text */
+}
