@@ -83,7 +83,7 @@ document.getElementById('escapismLink').addEventListener('click', function() {
 
 // If user clicks "Yes", download the PDF
 document.getElementById('yesButton').addEventListener('click', function() {
-    window.location.href = './pdf/escapism_manifesto.pdf'; // Replace with the actual PDF path
+    window.location.href = './pdf/Escapism_manifesto.pdf'; // Replace with the actual PDF path
     closePopup();
 });
 
