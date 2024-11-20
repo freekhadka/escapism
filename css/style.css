@@ -81,7 +81,7 @@ body {
     position: absolute;
     top: 600%;
     left: 50%;
-    transform: translate(-50%, 670%); /* Center the text horizontally and vertically */
+    transform: translate(-50%, -450%); /* Center the text horizontally and vertically */
     color: white;
     z-index: 20; /* Ensure it's above the video */
     opacity: 1; /* Start with full opacity */
@@ -141,7 +141,7 @@ footer p {
     position: absolute;
     bottom: 0px; /* Distance from the bottom of the header */
     left: 50%;
-    transform: translateX(-50%) translateY(1850%); /* Centers the text horizontally */
+    transform: translateX(-50%) translateY(1750%); /* Centers the text horizontally */
     color: white; /* Text color */
     font-size: 0.9rem; /* Adjust font size */
     font-weight: 600; /* Optional: Make text bolder */
@@ -150,7 +150,7 @@ footer p {
 @media (max-width: 768px) {
     .bottom-text {
         font-size: 0.8rem; /* Smaller font size for mobile */
-        transform: translateX(-90%) translateY(1300%); /* Adjust Y position for mobile */
+        transform: translateX(-90%) translateY(1200%); /* Adjust Y position for mobile */
         bottom: 10px; /* Set bottom margin to 10px for mobile devices */
     }
 }
@@ -278,4 +278,9 @@ footer p {
 .popup button:hover {
     background-color: #000000;
     color: white;
+}
+
+.logo-size {
+    width: 40px;  /* Adjust the width of the logo */
+    height: auto; /* Maintain the aspect ratio of the image */
 }
