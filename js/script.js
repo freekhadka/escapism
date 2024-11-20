@@ -66,3 +66,35 @@ animateRandomText("randomText3");
 animateRandomText("randomText4");
 animateRandomText("randomText5");
 
+ // GSAP animation for the "ESCAPISM" title
+ gsap.to("#escapismTitle", {
+    opacity: 0, 
+    duration: 2, 
+    repeat: -1, 
+    yoyo: true, 
+    ease: "power2.inOut"
+});
+
+// Show the popup when clicking on ESCAPISM link
+document.getElementById('escapismLink').addEventListener('click', function() {
+    document.getElementById('blurredBackground').style.display = 'block';
+    document.getElementById('confirmationPopup').style.display = 'block';
+});
+
+// If user clicks "Yes", download the PDF
+document.getElementById('yesButton').addEventListener('click', function() {
+    window.location.href = './pdf/escapism_manifesto.pdf'; // Replace with the actual PDF path
+    closePopup();
+});
+
+// If user clicks "No", close the popup
+document.getElementById('noButton').addEventListener('click', function() {
+    closePopup();
+});
+
+// Function to close the popup and hide the blurred background
+function closePopup() {
+    document.getElementById('blurredBackground').style.display = 'none';
+    document.getElementById('confirmationPopup').style.display = 'none';
+}
+
