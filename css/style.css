@@ -138,46 +138,38 @@ footer p {
 }
 
 .bottom-text {
-    position: absolute;
-    bottom: 0px; /* Distance from the bottom of the header */
+    position: fixed;
+    bottom: 10px; /* Keep it 10px from the bottom of the screen */
     left: 50%;
-    transform: translateX(-50%) translateY(1750%); /* Centers the text horizontally */
-    color: white; /* Text color */
-    font-size: 0.9rem; /* Adjust font size */
-    font-weight: 600; /* Optional: Make text bolder */
+    transform: translateX(-50%); /* Center horizontally */
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 20;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
     .bottom-text {
-        font-size: 0.8rem; /* Smaller font size for mobile */
-        transform: translateX(-90%) translateY(1200%); /* Adjust Y position for mobile */
-        bottom: 10px; /* Set bottom margin to 10px for mobile devices */
+        font-size: 0.8rem;
+        bottom: 10px; /* Keep it at the bottom of the viewport */
     }
 }
 
 @media (max-width: 400px) {
     .bottom-text {
-        font-size: 0.8rem; /* Smaller font size for mobile */
-        transform: translateX(-90%) translateY(1300%); /* Adjust Y position for mobile */
-        bottom: 10px; /* Set bottom margin to 10px for mobile devices */
+        font-size: 0.8rem;
+        bottom: 10px;
     }
 }
 
 @media (max-width: 300px) {
     .bottom-text {
-        font-size: 0.8rem; /* Smaller font size for mobile */
-        transform: translateX(-90%) translateY(1000%); /* Adjust Y position for mobile */
-        bottom: 10px; /* Set bottom margin to 10px for mobile devices */
+        font-size: 0.8rem;
+        bottom: 10px;
     }
 }
 
-@media (max-width: 350px) {
-    .bottom-text {
-        font-size: 0.8rem; /* Smaller font size for mobile */
-        transform: translateX(-90%) translateY(1000%); /* Adjust Y position for mobile */
-        bottom: 10px; /* Set bottom margin to 10px for mobile devices */
-    }
-}
 .escape-link {
     color: #ffffff; /* Change to your preferred color */
     text-decoration: none; /* Remove underline */
