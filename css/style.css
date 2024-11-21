@@ -81,7 +81,7 @@ body {
     position: absolute;
     top: 600%;
     left: 50%;
-    transform: translate(-50%, -450%); /* Center the text horizontally and vertically */
+    transform: translate(-50%, -250%); /* Center the text horizontally and vertically */
     color: white;
     z-index: 20; /* Ensure it's above the video */
     opacity: 1; /* Start with full opacity */
